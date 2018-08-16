@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing dimensions -->
+    <dimen name="tiny_spacing">4dp</dimen>
+    <dimen name="small_spacing">8dp</dimen>
+    <dimen name="medium_spacing">16dp</dimen>
+    <dimen name="large_spacing">24dp</dimen>
+
+    <!-- Button dimensions -->
+    <dimen name="quantity_buttons_size">35dp</dimen>
+    <dimen name="supplier_button_size">150dp</dimen>
+</resources>

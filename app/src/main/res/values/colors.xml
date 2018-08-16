@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAf50</color>
+    <color name="colorPrimaryDark">#087F23</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <!-- Primary text colour for the main list of items -->
+    <color name="listPrimaryText">#2B3D4D</color>
+
+    <!-- Secondary text colour for the main list of items -->
+    <color name="listSecondaryText">#A2AAB0</color>
+
+    <!-- Custom toast message background colour -->
+    <color name="customToastBackground">#3C3C3C</color>
+
+</resources>

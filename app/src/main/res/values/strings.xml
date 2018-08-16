@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">BookShop</string>
+
+    <!-- MainActivity -->
+    <string name="product_list">Product List</string>
+
+    <string name="insert_new_book">Insert New Book</string>
+    <string name="action_delete_all_entries">Delete All Books</string>
+
+    <string name="book_stack">A stack of books</string>
+    <string name="empty_view_title_text">No books in inventory &#8230;</string>
+    <string name="empty_view_subtitle_text">Get started by adding a book from the app bar</string>
+
+    <string name="sell_unit">Sell Unit</string>
+    <string name="sell_unit_descrip">Sell one unit of the selected book</string>
+    <string name="sell_button_id_tag">sell_button_id</string>
+    <string name="sell_button_quantity_tag">sell_button_quantity</string>
+
+    <!-- EditorActivity -->
+    <string name="editor_activity_title_new_book">Add a Book</string>
+    <string name="editor_activity_title_edit_book">Edit Book</string>
+
+    <string name="action_save">Save</string>
+    <string name="complete_fields">Please complete all non-optional fields</string>
+    <string name="editor_insert_book_successful">Book saved</string>
+    <string name="editor_insert_book_failed">Error with saving book</string>
+    <string name="editor_update_book_successful">Book updated</string>
+    <string name="editor_update_book_failed">Error with updating book</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="delete_dialog_msg">Delete this book?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_book_successful">Book deleted</string>
+    <string name="editor_delete_book_failed">Error with deleting book</string>
+
+    <string name="book_overview">Overview</string>
+    <string name="hint_book_name">Name</string>
+    <string name="hint_book_authors">Authors (optional)</string>
+    <string name="unknown_author">Unknown Author</string>
+    <string name="hint_book_pages">Pages (optional)</string>
+
+    <string name="book_inventory">Inventory</string>
+    <string name="hint_book_price">Unit Price</string>
+    <string name="hint_book_quantity">Quantity in Stock</string>
+    <string name="add_quantity">Enter amount to add</string>
+    <string name="add_quantity_descrip">Button to add stock to the quantity</string>
+    <string name="remove_quantity">Enter amount to remove</string>
+    <string name="remove_quantity_descrip">Button to remove stock from the quantity</string>
+    <string name="not_enough_stock">Not enough stock</string>
+    <string name="change_quantity">Change Quantity By</string>
+
+    <string name="book_supplier">Supplier</string>
+    <string name="hint_supplier_name">Supplier Name</string>
+    <string name="hint_supplier_number">Supplier Number</string>
+    <string name="call_supplier_descrip">Button to call the book supplier</string>
+    <string name="uk_country_code">+44</string>
+    <string name="no_phone_app">Device not capable of making calls</string>
+
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+</resources>

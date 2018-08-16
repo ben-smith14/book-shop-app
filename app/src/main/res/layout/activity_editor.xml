@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userinterface.EditorActivity">
+
+    <LinearLayout
+        android:id="@+id/parent_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_spacing">
+
+        <!-- Book Overview category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/LabelStyle"
+                android:text="@string/book_overview" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/tiny_spacing"
+                android:paddingRight="@dimen/tiny_spacing">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/edit_book_name"
+                    style="@style/InputFieldStyle"
+                    android:hint="@string/hint_book_name"
+                    android:inputType="textCapWords" />
+
+                <!-- Author(s) field -->
+                <EditText
+                    android:id="@+id/edit_book_authors"
+                    style="@style/InputFieldStyle"
+                    android:hint="@string/hint_book_authors"
+                    android:inputType="textCapWords" />
+
+                <!-- Pages field -->
+                <EditText
+                    android:id="@+id/edit_book_pages"
+                    style="@style/InputFieldStyle"
+                    android:hint="@string/hint_book_pages"
+                    android:inputType="number" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Inventory category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/LabelStyle"
+                android:text="@string/book_inventory" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/tiny_spacing"
+                android:paddingRight="@dimen/tiny_spacing">
+
+                <!-- Price field -->
+                <EditText
+                    android:id="@+id/edit_book_price"
+                    style="@style/InputFieldStyle"
+                    android:hint="@string/hint_book_price"
+                    android:inputType="numberDecimal" />
+
+                <!-- Quantity field -->
+                <EditText
+                    android:id="@+id/edit_book_quantity"
+                    style="@style/InputFieldStyle"
+                    android:hint="@string/hint_book_quantity"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/book_quantity_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/tiny_spacing"
+                    android:paddingRight="@dimen/tiny_spacing"
+                    android:paddingTop="@dimen/small_spacing"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    tools:text="100" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/small_spacing">
+
+                    <ImageButton
+                        android:id="@+id/add_stock"
+                        android:layout_width="@dimen/quantity_buttons_size"
+                        android:layout_height="@dimen/quantity_buttons_size"
+                        android:layout_marginBottom="@dimen/medium_spacing"
+                        android:background="@null"
+                        android:contentDescription="@string/add_quantity_descrip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_circle" />
+
+                    <ImageButton
+                        android:id="@+id/remove_stock"
+                        android:layout_width="@dimen/quantity_buttons_size"
+                        android:layout_height="@dimen/quantity_buttons_size"
+                        android:layout_below="@id/add_stock"
+                        android:background="@null"
+                        android:contentDescription="@string/remove_quantity_descrip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_remove_circle" />
+
+                    <EditText
+                        android:id="@+id/change_quantity_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/small_spacing"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_toEndOf="@id/add_stock"
+                        android:layout_toRightOf="@id/add_stock"
+                        android:hint="@string/change_quantity"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Supplier category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/LabelStyle"
+                android:text="@string/book_supplier" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/tiny_spacing"
+                android:paddingRight="@dimen/tiny_spacing">
+
+                <!-- Supplier Name field -->
+                <EditText
+                    android:id="@+id/edit_supplier_name"
+                    style="@style/InputFieldStyle"
+                    android:hint="@string/hint_supplier_name"
+                    android:inputType="textCapWords" />
+
+                <!-- Supplier Number field -->
+                <EditText
+                    android:id="@+id/edit_supplier_number"
+                    style="@style/InputFieldStyle"
+                    android:hint="@string/hint_supplier_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <ImageButton
+                    android:id="@+id/call_supplier"
+                    android:layout_width="@dimen/supplier_button_size"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:contentDescription="@string/call_supplier_descrip"
+                    android:padding="@dimen/medium_spacing"
+                    android:src="@drawable/ic_phone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
